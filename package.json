@@ -1,0 +1,19 @@
+{
+  "name": "serverless-spa-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "serverless offline --httpPort  4000",
+    "dev-front": " cd ./front && npm run dev",
+    "deploy-stg": "serverless deploy --stage staging"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "serverless": "^4.4.18",
+    "serverless-offline": "^14.4.0",
+    "serverless-single-page-app-plugin": "^1.0.4"
+  }
+}
